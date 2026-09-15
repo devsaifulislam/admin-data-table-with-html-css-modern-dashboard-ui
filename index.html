@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Data Table with HTML &amp; CSS 📊 | Modern Dashboard UI</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<section class="data-table-card">
+  <header class="table-header">
+    <div>
+      <p class="eyebrow">USER MANAGEMENT</p>
+      <h1>Team Members <span>48</span></h1>
+    </div>
+
+    <button class="add-button" type="button">
+      ＋ Add Member
+    </button>
+  </header>
+
+  <div class="table-toolbar">
+    <label class="search-box">
+      <span>⌕</span>
+      <input
+        type="search"
+        placeholder="Search members..."
+        aria-label="Search members"
+      >
+    </label>
+
+    <div class="filter-actions">
+      <select aria-label="Filter by role">
+        <option>All Roles</option>
+        <option>Administrator</option>
+        <option>Developer</option>
+        <option>Designer</option>
+      </select>
+
+      <button type="button">☷ Filter</button>
+    </div>
+  </div>
+
+  <div class="table-wrapper">
+    <div class="data-row table-columns">
+      <span><input type="checkbox" aria-label="Select all members"></span>
+      <span>Member</span>
+      <span>Role</span>
+      <span>Status</span>
+      <span>Last Active</span>
+      <span></span>
+    </div>
+
+    <div class="data-row">
+      <span>
+        <input type="checkbox" aria-label="Select Saiful Islam">
+      </span>
+
+      <div class="member">
+        <img
+          src="https://i.pravatar.cc/80?img=12"
+          alt="Saiful Islam"
+        >
+
+        <div>
+          <strong>Saiful Islam</strong>
+          <small>saiful@example.com</small>
+        </div>
+      </div>
+
+      <span class="role">Administrator</span>
+      <span class="status active">● Active</span>
+      <span class="last-active">Just now</span>
+
+      <button class="row-menu" type="button" aria-label="Member options">
+        •••
+      </button>
+    </div>
+
+    <div class="data-row">
+      <span>
+        <input type="checkbox" aria-label="Select Sarah Lee">
+      </span>
+
+      <div class="member">
+        <img
+          src="https://i.pravatar.cc/80?img=32"
+          alt="Sarah Lee"
+        >
+
+        <div>
+          <strong>Sarah Lee</strong>
+          <small>sarah@example.com</small>
+        </div>
+      </div>
+
+      <span class="role">UI Designer</span>
+      <span class="status active">● Active</span>
+      <span class="last-active">5 min ago</span>
+
+      <button class="row-menu" type="button" aria-label="Member options">
+        •••
+      </button>
+    </div>
+
+    <div class="data-row">
+      <span>
+        <input type="checkbox" aria-label="Select Alex Morgan">
+      </span>
+
+      <div class="member">
+        <img
+          src="https://i.pravatar.cc/80?img=47"
+          alt="Alex Morgan"
+        >
+
+        <div>
+          <strong>Alex Morgan</strong>
+          <small>alex@example.com</small>
+        </div>
+      </div>
+
+      <span class="role">Developer</span>
+      <span class="status pending">● Pending</span>
+      <span class="last-active">1 hour ago</span>
+
+      <button class="row-menu" type="button" aria-label="Member options">
+        •••
+      </button>
+    </div>
+
+    <div class="data-row">
+      <span>
+        <input type="checkbox" aria-label="Select Emma Wilson">
+      </span>
+
+      <div class="member">
+        <img
+          src="https://i.pravatar.cc/80?img=45"
+          alt="Emma Wilson"
+        >
+
+        <div>
+          <strong>Emma Wilson</strong>
+          <small>emma@example.com</small>
+        </div>
+      </div>
+
+      <span class="role">Marketing</span>
+      <span class="status inactive">● Inactive</span>
+      <span class="last-active">3 days ago</span>
+
+      <button class="row-menu" type="button" aria-label="Member options">
+        •••
+      </button>
+    </div>
+  </div>
+
+  <footer class="table-footer">
+    <p>Showing <strong>1–4</strong> of <strong>48</strong> members</p>
+
+    <div class="pagination">
+      <button type="button" aria-label="Previous page">‹</button>
+      <button class="active" type="button">1</button>
+      <button type="button">2</button>
+      <button type="button">3</button>
+      <button type="button" aria-label="Next page">›</button>
+    </div>
+  </footer>
+</section>
+</body>
+</html>
